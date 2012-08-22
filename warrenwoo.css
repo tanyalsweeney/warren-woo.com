@@ -1,0 +1,288 @@
+/* USE THIS ONE */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: #707070;
+}
+
+.container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: QuicksandLight;
+	color: #707070;
+}
+
+/* BEGIN HEADER AND LOGO STYLING */
+
+.header {
+	width: 100%;
+}
+
+#header {
+	 background: url(images/ragdoll.jpg);
+	 width: 960px;
+	 height: 250px;
+	 float: left;
+	 font-family: QuattrocentoRomanRegular, serif;
+}
+
+#header p {
+	margin-top: 90px;
+	margin-left: 64px;
+}
+
+/* The logo is styled in an 'A-B-A-B-C configuration.
+ * The W's are the A parts, the text of the first and
+ * last name are the B parts, and the .com is the
+ * C part. */
+.logopart_a {
+	font-family: QuattrocentoRomanRegular, serif;
+	font-size: 3.2em;
+	display: inline-block;
+}
+
+.logopart_b {
+	font-family: QuattrocentoRomanRegular, serif;
+	font-size: 2.1em;
+	display: inline-block;
+}
+
+#logopart_c {
+	/*color: #a0a0a0;*/
+	font-family: QuattrocentoRomanRegular, serif;
+	font-size: 2.1em;
+	display: inline-block;
+}
+
+
+/* START NAV STYLING */
+
+#nav-container {
+	float: left;
+	width: 100%;
+	background-color:#ffffff;
+	display: block;
+	padding: 4px 0 0 0;
+}
+
+#nav * {
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	/* behavior: url(../../lib/js_tools/csshover.htc); */
+	float: left;
+	width: 100%;
+	background-color:#ffffff;
+	
+}
+
+#nav ul {
+	float: left;
+	margin: 0 38px;
+}
+
+#nav li {
+	list-style-type: none;
+	float: left;
+	position: relative;
+}
+
+#nav li ul {
+	position: absolute;
+	display: none;
+}
+
+#nav li:hover ul {
+	display: block;
+	margin: 0;
+}
+
+#nav a {
+	display: block;
+	text-decoration: none;
+	color:#707070;
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding: .3em 24px .4em 24px;
+	margin: 0 4px;
+}
+
+#nav a:hover {
+	color: #ffffff;
+	background-color: #707070;
+}
+
+#nav .selected {
+	color: #7ca429;
+	text-decoration: underline;
+	display: block;
+}
+
+
+/* START CONTENT STYLING */
+
+.content {
+	width: 100%;
+	height: 325px;
+	background-color: #FFFFFF;
+	float: left;
+}
+
+.content p {
+	line-height: 1.75em;
+	margin: 26px 64px;
+}
+
+.content em {
+	font-size: 1.4em;
+	font-style:normal;
+}
+
+
+/* START FOOTER STYLING */
+
+.footer {
+	width: 100%;
+	height: 25px;
+	background-color: #FFFFFF;
+	float: left;
+}
+
+.footer p {
+	margin: 0 64px;
+}
+
+.footer a {
+	display: inline-block;
+	text-decoration: none;
+	color:#707070;
+	background-color: #ffffff;
+	font-size: .9em;
+}
+
+.footer a:hover {
+	display: inline-block;
+	text-decoration: underline;
+	color:#707070;
+	background-color: #ffffff;
+}
+
+
+/* START CUSTOM STYLING FOR HOMEPAGE ONLY */
+
+#home-link-container {
+	width: 896px;
+	padding: 32px;
+}
+
+.home-link {
+	background: url(images/dance_kanji_grey_small.jpg);
+	width: 220px;
+	height: 220px;
+	margin: 16px 32px;
+	padding: 0;
+	border: 1.5px solid #707070;
+	border-radius: 24px;
+	float: left;
+	position: relative;
+}
+
+.home-link span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.home-link p {
+	margin-top: 190px;
+	text-align: center;
+}
+
+
+/* START CUSTOM STYLING FOR CALENDAR PAGE ONLY */
+
+iframe {
+	padding: 32px 64px;
+}
+
+/* font info */
+
+@font-face {
+    font-family: 'QuicksandLight';
+    src: url('Quicksand_Light-webfont.eot');
+    src: url('Quicksand_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Quicksand_Light-webfont.woff') format('woff'),
+         url('Quicksand_Light-webfont.ttf') format('truetype'),
+         url('Quicksand_Light-webfont.svg#QuicksandLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'QuattrocentoRomanRegular';
+    src: url('Quattrocento-Regular-webfont.eot');
+    src: url('Quattrocento-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Quattrocento-Regular-webfont.woff') format('woff'),
+         url('Quattrocento-Regular-webfont.ttf') format('truetype'),
+         url('Quattrocento-Regular-webfont.svg#QuattrocentoRomanRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* START CUSTOM STYLING FOR CONTACT PAGE */
+#contact_form fieldset {
+	border: none;
+	padding: 32px 0 0 0;
+}
+
+#contact_form label {
+	display: inline-block;
+	width: 105px;
+	height: 2.5em;
+	margin: 16px 0 8px 64px;
+}
+
+#contact_form label.error {
+	width: 175px;
+	margin: 16px 64px 8px 0;
+}
+
+#contact_form input {
+	border: 1.5px solid #707070;
+	border-radius: 4px;
+	width: 525px;
+	padding: 3px 2px;
+}
+
+#contact_form input.button {
+	width: 100px;
+	height: 35px;
+	margin: 8px 375px 16px 375px;
+	border: 1.5px solid #707070;
+}
+
+#contact_form #message h2 {
+	text-align: center;
+	margin: 64px;
+	color: #9acd32;
+}
+
+#contact_form #message p {
+	text-align: center;
+	margin: 32px;
+	color: #9acd32;
+	font-size: 1.2em;
+}
+
